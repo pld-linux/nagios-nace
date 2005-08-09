@@ -1,0 +1,14 @@
+--- ../lib/ConfigLib.pm~	2005-07-16 18:04:49.502598394 +0300
++++ ../lib/ConfigLib.pm	2005-07-16 18:04:51.065341999 +0300
+@@ -31,9 +31,9 @@
+ 			 $Debug 
+ 			 );
+ 
+-my @ISA = qw(Exporter);
++our @ISA = qw(Exporter);
+ 
+-my @EXPORT = qw( 
++our @EXPORT = qw( 
+ 				 $Debug
+ 				 &DebugMsg
+ 				 &DebugDumpHash
