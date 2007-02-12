@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Nagios Automated Configuration Engine
-Summary(pl):	Nagios Automated Configuration Engine - silnik do automatycznej konfituracji Nagiosa
+Summary(pl.UTF-8):   Nagios Automated Configuration Engine - silnik do automatycznej konfituracji Nagiosa
 Name:		nagios-nace
 Version:	0.3
 Release:	0.4
@@ -27,14 +27,14 @@ experienced Nagios administrator to perform a query against the
 supplied host list. It then creates host and service definitions using
 the parameters supplied in the query.
 
-%description -l pl
-NACE to og髄ny silnik odpytuj眂y s硊勘cy do automatycznego tworzenia
-definicji host體 i us硊g dla host體 w sieci.
+%description -l pl.UTF-8
+NACE to og贸lny silnik odpytuj膮cy s艂u偶膮cy do automatycznego tworzenia
+definicji host贸w i us艂ug dla host贸w w sieci.
 
-Jest przeznaczony do u縴wania jako skrypt powoki w regularnych
-odst阷ach czasu przez do秝iadczonego administratora Nagiosa do
-sprawdzania podanej listy host體. Nast阷nie tworzy definicje host體 i
-us硊g przy u縴ciu parametr體 przekazanych do zapytania.
+Jest przeznaczony do u偶ywania jako skrypt powoki w regularnych
+odst臋pach czasu przez do艣wiadczonego administratora Nagiosa do
+sprawdzania podanej listy host贸w. Nast臋pnie tworzy definicje host贸w i
+us艂ug przy u偶yciu parametr贸w przekazanych do zapytania.
 
 %prep
 %setup -q -n nace-%{version}
