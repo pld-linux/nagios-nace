@@ -2,14 +2,13 @@
 Summary:	Nagios Automated Configuration Engine
 Summary(pl.UTF-8):	Nagios Automated Configuration Engine - silnik do automatycznej konfituracji Nagiosa
 Name:		nagios-nace
-Version:	0.3
-Release:	0.4
+Version:	0.4
+Release:	0.1
 Epoch:		0
 License:	GPL v2
 Group:		Applications
 Source0:	http://www.adamsinfoserv.com/software/nace-%{version}.tar.gz
-# Source0-md5:	be99a13eb5acebc7ee556476d256bbb1
-Patch0:		%{name}-perl.patch
+# Source0-md5:	4f77d43795946c2544fe2f6c0e620bad
 URL:		http://www.adamsinfoserv.com/AISTWiki/bin/view/AIS/NACE
 BuildRequires:	sed >= 4.0
 BuildArch:	noarch
@@ -38,7 +37,6 @@ usług przy użyciu parametrów przekazanych do zapytania.
 
 %prep
 %setup -q -n nace-%{version}
-%patch0 -p1
 
 #sed -i -e '
 #s#DebugMsg \(.*\);#DebugMsg(\1);#g
@@ -48,7 +46,7 @@ usług przy użyciu parametrów przekazanych do zapytania.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_appdir}/{bin,lib}
 
-cp -a scripts/* $RPM_BUILD_ROOT%{_appdir}/bin
+cp -a bin/* $RPM_BUILD_ROOT%{_appdir}/bin
 cp -a lib/* $RPM_BUILD_ROOT%{_appdir}/lib
 
 %clean
@@ -56,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES INSTALL README README.old REQUIREMENTS THANKS TODO
+%doc CHANGES INSTALL README README.old REQUIREMENTS THANKS TODO SCRIPTS
 %dir %{_appdir}
 %dir %{_appdir}/bin
 %attr(755,root,root) %{_appdir}/bin/*
