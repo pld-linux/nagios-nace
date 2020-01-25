@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	Nagios Automated Configuration Engine
 Summary(pl.UTF-8):	Nagios Automated Configuration Engine - silnik do automatycznej konfituracji Nagiosa
 Name:		nagios-nace
